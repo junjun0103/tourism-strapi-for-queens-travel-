@@ -90,6 +90,10 @@
       "type": "boolean",
       "default": true,
       "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title_en"
     }
   }
 }
