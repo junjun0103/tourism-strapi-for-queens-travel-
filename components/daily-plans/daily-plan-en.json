@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_daily_plan_en_daily_plan_ens",
+  "info": {
+    "name": "dailyPlan_en",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "route": {
+      "type": "string",
+      "required": true
+    },
+    "stayAndMeals": {
+      "type": "richtext",
+      "required": true
+    },
+    "itinerary": {
+      "type": "richtext",
+      "required": true
+    },
+    "photo1": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "photo2": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

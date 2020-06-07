@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "feedbacks",
+  "info": {
+    "name": "feedbacks"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title_en": {
+      "type": "string",
+      "required": true
+    },
+    "title_cn": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "date": {
+      "type": "string",
+      "required": true
+    },
+    "name_en": {
+      "type": "string",
+      "required": true
+    },
+    "name_cn": {
+      "type": "string",
+      "required": true
+    },
+    "content_en": {
+      "type": "richtext",
+      "required": true
+    },
+    "content_cn": {
+      "type": "richtext",
+      "required": true
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "customTourFeedback": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tourist-informations",
+      "handler": "tourist-information.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tourist-informations/count",
+      "handler": "tourist-information.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tourist-informations/:id",
+      "handler": "tourist-information.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tourist-informations",
+      "handler": "tourist-information.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tourist-informations/:id",
+      "handler": "tourist-information.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tourist-informations/:id",
+      "handler": "tourist-information.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

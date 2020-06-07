@@ -1,0 +1,103 @@
+{
+  "kind": "collectionType",
+  "collectionName": "itineraries",
+  "info": {
+    "name": "itineraries"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title_en": {
+      "type": "string",
+      "required": true
+    },
+    "title_cn": {
+      "type": "string",
+      "required": true
+    },
+    "subTitle_en": {
+      "type": "string",
+      "required": true
+    },
+    "subTitle_cn": {
+      "type": "string",
+      "required": true
+    },
+    "highlight_en": {
+      "type": "richtext",
+      "required": true
+    },
+    "highlight_cn": {
+      "type": "richtext",
+      "required": true
+    },
+    "map": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "price_en": {
+      "type": "string",
+      "required": true
+    },
+    "price_cn": {
+      "type": "string",
+      "required": true
+    },
+    "priceDetail_en": {
+      "type": "richtext",
+      "required": true
+    },
+    "priceDetail_cn": {
+      "type": "richtext",
+      "required": true
+    },
+    "included_en": {
+      "type": "richtext",
+      "required": true
+    },
+    "included_cn": {
+      "type": "richtext",
+      "required": true
+    },
+    "excluded_en": {
+      "type": "richtext",
+      "required": true
+    },
+    "excluded_cn": {
+      "type": "richtext",
+      "required": true
+    },
+    "policy_en": {
+      "type": "richtext",
+      "required": true
+    },
+    "policy_cn": {
+      "type": "richtext",
+      "required": true
+    },
+    "plans_en": {
+      "type": "component",
+      "repeatable": true,
+      "component": "daily-plans.daily-plan-en",
+      "required": true
+    },
+    "plans_cn": {
+      "type": "component",
+      "repeatable": true,
+      "component": "daily-plans.daily-plan-cn",
+      "required": true
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

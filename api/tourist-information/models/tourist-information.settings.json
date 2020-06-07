@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tourist_informations",
+  "info": {
+    "name": "tourist Informations"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title_en": {
+      "type": "string",
+      "required": true
+    },
+    "title_cn": {
+      "type": "string",
+      "required": true
+    },
+    "information": {
+      "type": "component",
+      "repeatable": true,
+      "component": "information-detail.information-detail",
+      "required": true
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

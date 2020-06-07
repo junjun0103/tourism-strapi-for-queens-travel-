@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tour_guides",
+  "info": {
+    "name": "Tour Guides"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "profile": {
+      "type": "richtext",
+      "required": true
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "englishGuide": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

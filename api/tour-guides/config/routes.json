@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tour-guides",
+      "handler": "tour-guides.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tour-guides/count",
+      "handler": "tour-guides.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tour-guides/:id",
+      "handler": "tour-guides.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tour-guides",
+      "handler": "tour-guides.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tour-guides/:id",
+      "handler": "tour-guides.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tour-guides/:id",
+      "handler": "tour-guides.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

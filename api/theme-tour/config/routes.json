@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/theme-tours",
+      "handler": "theme-tour.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/theme-tours/count",
+      "handler": "theme-tour.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/theme-tours/:id",
+      "handler": "theme-tour.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/theme-tours",
+      "handler": "theme-tour.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/theme-tours/:id",
+      "handler": "theme-tour.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/theme-tours/:id",
+      "handler": "theme-tour.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
