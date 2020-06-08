@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "itineraries",
   "info": {
-    "name": "itineraries"
+    "name": "best Sale"
   },
   "options": {
     "increments": true,
@@ -102,6 +102,14 @@
     "slug": {
       "type": "uid",
       "targetField": "title_en",
+      "required": true
+    },
+    "departureDay_en": {
+      "type": "string",
+      "required": true
+    },
+    "departureDay_cn": {
+      "type": "string",
       "required": true
     }
   }
