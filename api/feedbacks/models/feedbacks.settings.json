@@ -53,11 +53,11 @@
       "type": "date"
     },
     "shortDescription_cn": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "shortDescription_en": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "slug": {
