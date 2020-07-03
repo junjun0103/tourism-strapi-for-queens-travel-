@@ -111,6 +111,15 @@
     "departureDay_cn": {
       "type": "string",
       "required": true
+    },
+    "background_img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
     }
   }
 }
