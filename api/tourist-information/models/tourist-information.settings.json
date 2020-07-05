@@ -17,7 +17,7 @@
       "type": "string",
       "required": true
     },
-    "information": {
+    "information_en": {
       "type": "component",
       "repeatable": true,
       "component": "information-detail.information-detail",
@@ -40,6 +40,20 @@
     "slug": {
       "type": "uid",
       "targetField": "title_en",
+      "required": true
+    },
+    "information_cn": {
+      "type": "component",
+      "repeatable": true,
+      "component": "information-detail.information-detail",
+      "required": true
+    },
+    "notice_en": {
+      "type": "text",
+      "required": true
+    },
+    "notice_cn": {
+      "type": "text",
       "required": true
     }
   }

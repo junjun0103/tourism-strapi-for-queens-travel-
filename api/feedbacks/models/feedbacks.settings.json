@@ -53,17 +53,20 @@
       "type": "date"
     },
     "shortDescription_cn": {
-      "type": "string",
-      "required": true
+      "type": "text",
+      "required": true,
+      "maxLength": 100
     },
     "shortDescription_en": {
-      "type": "string",
-      "required": true
+      "type": "text",
+      "required": true,
+      "maxLength": 100
     },
     "slug": {
       "type": "uid",
       "targetField": "title_en",
-      "private": true
+      "private": false,
+      "required": true
     }
   }
 }
