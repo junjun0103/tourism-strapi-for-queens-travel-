@@ -11,17 +11,19 @@
   "attributes": {
     "title_en": {
       "type": "string",
-      "required": true
+      "required": true,
+      "maxLength": 30
     },
     "title_cn": {
       "type": "string",
-      "required": true
+      "required": true,
+      "maxLength": 30
     },
-    "subTitle_en": {
+    "slogan_en": {
       "type": "string",
       "required": true
     },
-    "subTitle_cn": {
+    "slogan_cn": {
       "type": "string",
       "required": true
     },
