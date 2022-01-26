@@ -9,29 +9,16 @@
     "timestamps": true
   },
   "attributes": {
-    "title_en": {
-      "type": "string",
-      "required": true,
-      "maxLength": 30
-    },
     "title_cn": {
       "type": "string",
       "required": true,
       "maxLength": 30
     },
-    "slogan_en": {
+    "slogan": {
       "type": "string",
       "required": true
     },
-    "slogan_cn": {
-      "type": "string",
-      "required": true
-    },
-    "highlight_en": {
-      "type": "richtext",
-      "required": true
-    },
-    "highlight_cn": {
+    "highlight": {
       "type": "richtext",
       "required": true
     },
@@ -44,43 +31,19 @@
       "plugin": "upload",
       "required": true
     },
-    "price_en": {
-      "type": "string",
-      "required": true
-    },
-    "price_cn": {
-      "type": "string",
-      "required": true
-    },
-    "priceDetail_en": {
+    "priceDetail": {
       "type": "richtext",
       "required": true
     },
-    "priceDetail_cn": {
+    "included": {
       "type": "richtext",
       "required": true
     },
-    "included_en": {
+    "excluded": {
       "type": "richtext",
       "required": true
     },
-    "included_cn": {
-      "type": "richtext",
-      "required": true
-    },
-    "excluded_en": {
-      "type": "richtext",
-      "required": true
-    },
-    "excluded_cn": {
-      "type": "richtext",
-      "required": true
-    },
-    "policy_en": {
-      "type": "richtext",
-      "required": true
-    },
-    "policy_cn": {
+    "policy": {
       "type": "richtext",
       "required": true
     },
@@ -103,14 +66,9 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "title_en",
       "required": true
     },
-    "departureDay_en": {
-      "type": "string",
-      "required": true
-    },
-    "departureDay_cn": {
+    "departureDay": {
       "type": "string",
       "required": true
     },

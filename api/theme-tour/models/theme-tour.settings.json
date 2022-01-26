@@ -105,6 +105,16 @@
       ],
       "plugin": "upload",
       "required": true
+    },
+    "subTitle_en": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "subTitle_cn": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
     }
   }
 }
